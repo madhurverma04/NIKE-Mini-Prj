@@ -258,6 +258,21 @@ function TextAnimationPage3(){
 TextAnimationPage3()
 
 
+function navLinks(){
+  const navLinks = document.querySelectorAll('.navbar-1 a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      
+      const url = this.getAttribute('data-url');
+      
+      
+      window.location.href = url;
+    });
+  });
+}
+navLinks();
+
 var arr=[{
   image:"./images/json1-nikeAir.webp",
   name:"Nike Air",
